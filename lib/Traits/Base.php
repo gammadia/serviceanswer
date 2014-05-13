@@ -5,7 +5,7 @@ namespace Voilab\Restanswer\Traits;
 trait Base {
 
     public $body;
-    public $success;
+    public $success = true;
 
     public function getBody() {
         return $this->body;

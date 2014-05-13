@@ -21,5 +21,11 @@ class Container extends \Pimple {
             return new Answer($c);
         });
 
+        $this['error'] = $this->factory(function ($c) {
+            $answer = new Answer($c);
+            $answer->success = false;
+            return $answer;
+        });
+
     }
 }
