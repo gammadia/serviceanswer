@@ -1,10 +1,9 @@
 <?php
-namespace Voilab\Restanswer;
+namespace Voilab\Serviceanswer;
 
 
-use Voilab\Restanswer\Interfaces\Returnable;
-use Voilab\Restanswer\Traits\Base;
-use Voilab\Serviceanswer\Container;
+use Voilab\Serviceanswer\Interfaces\Returnable;
+use Voilab\Serviceanswer\Traits\Base;
 
 class Answer implements Returnable {
     use Base;

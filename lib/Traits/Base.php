@@ -1,5 +1,5 @@
 <?php
-namespace Voilab\Restanswer\Traits;
+namespace Voilab\Serviceanswer\Traits;
 
 
 trait Base {

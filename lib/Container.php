@@ -2,8 +2,6 @@
 
 namespace Voilab\Serviceanswer;
 
-use Voilab\Restanswer\Answer;
-
 class Container extends \Pimple {
 
     /**

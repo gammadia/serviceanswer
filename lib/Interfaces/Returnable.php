@@ -1,5 +1,5 @@
 <?php
-namespace Voilab\Restanswer\Interfaces;
+namespace Voilab\Serviceanswer\Interfaces;
 
 
 interface Returnable {
@@ -35,7 +35,7 @@ interface Returnable {
 
     /**
      * Get an error code
-     * 
+     *
      * @return int
      */
     public function getErrorCode();
