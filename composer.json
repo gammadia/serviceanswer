@@ -1,0 +1,23 @@
+{
+    "name": "voilab/serviceanswer",
+    "type": "library",
+    "description": "Yet another mean to standardize a service answer with error management.",
+    "homepage": "https://bitbucket.org/voilab/serviceanswer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joël Poulin",
+            "email": "joel@voilab.org",
+            "homepage": "http://www.voilab.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "pimple/pimple": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Voilab\\Serviceanswer\\": "lib/"
+        }
+    }
+}
