@@ -31,7 +31,7 @@ interface Returnable {
      * @param string $type
      * @return string
      */
-    public function getMessage($type);
+    public function getMessage($type = null);
 
     /**
      * Get an error code
