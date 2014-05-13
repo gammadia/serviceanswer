@@ -14,7 +14,9 @@ class Container extends \Pimple {
         parent::__construct();
 
         $this['config'] = array_merge(array(
-            'wat' => 'meh'
+            'wording' => array(
+                'devMessagePrefix' => 'Technical message: '
+            )
         ), $config);
 
         $this['answer'] = $this->factory(function ($c) {
