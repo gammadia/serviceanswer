@@ -8,6 +8,9 @@ trait Base {
     public $messages = array();
     public $success = true;
     public $errorCode;
+    public $metadatas = array();
+
+    public $internalDatas = array();
 
     public function getBody() {
         return $this->body;
@@ -68,10 +71,6 @@ trait Base {
         return $this->metadatas[$key];
     }
 
-    public function isEmpty() {
-        return empty($this->body);
-    }
-
     public function setInternalData($key, $value) {
         $this->internalDatas[$key] = $value;
         return $this;
@@ -88,5 +87,9 @@ trait Base {
 
     public function getInternalData($key) {
         return $this->internalDatas[$key];
+    }
+
+    public function isEmpty() {
+        return empty($this->body);
     }
 }

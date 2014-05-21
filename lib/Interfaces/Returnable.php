@@ -39,4 +39,11 @@ interface Returnable {
      * @return int
      */
     public function getErrorCode();
+
+    /**
+     * Récupération des métadonnées de la réponse
+     *
+     * @return array
+     */
+    public function getMetadatas();
 } 
