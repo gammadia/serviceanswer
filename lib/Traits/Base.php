@@ -53,4 +53,22 @@ trait Base {
     public function isEmpty() {
         return empty($this->body);
     }
+
+    public function setInternalData($key, $value) {
+        $this->internalDatas[$key] = $value;
+        return $this;
+    }
+
+    public function setInternalDatas($datas) {
+        $this->internalDatas = $datas;
+        return $this;
+    }
+
+    public function getInternalDatas() {
+        return $this->internalDatas;
+    }
+
+    public function getInternalData($key) {
+        return $this->internalDatas[$key];
+    }
 }
