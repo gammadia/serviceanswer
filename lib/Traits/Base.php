@@ -49,4 +49,8 @@ trait Base {
         $this->messages['empty'] = $message;
         return $this;
     }
+
+    public function isEmpty() {
+        return empty($this->body);
+    }
 }
