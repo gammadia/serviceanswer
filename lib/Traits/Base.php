@@ -50,6 +50,24 @@ trait Base {
         return $this;
     }
 
+    public function setMetadata($key, $value) {
+        $this->metadatas[$key] = $value;
+        return $this;
+    }
+
+    public function setMetadatas($metadatas) {
+        $this->metadatas = $metadatas;
+        return $this;
+    }
+
+    public function getMetadatas() {
+        return $this->metadatas;
+    }
+
+    public function getMetadata($key) {
+        return $this->metadatas[$key];
+    }
+
     public function isEmpty() {
         return empty($this->body);
     }
