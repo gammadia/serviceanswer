@@ -1,5 +1,5 @@
 <?php
-namespace Voilab\Restanswer\Interfaces;
+namespace Voilab\Serviceanswer\Interfaces;
 
 
 interface Returnable {
@@ -17,4 +17,33 @@ interface Returnable {
      * @return bool
      */
     public function isSuccess();
+
+    /**
+     * Get all messages
+     *
+     * @return array
+     */
+    public function getMessages();
+
+    /**
+     * Get a specific message
+     *
+     * @param string $type
+     * @return string
+     */
+    public function getMessage($type = null);
+
+    /**
+     * Get an error code
+     *
+     * @return int
+     */
+    public function getErrorCode();
+
+    /**
+     * Récupération des métadonnées de la réponse
+     *
+     * @return array
+     */
+    public function getMetadatas();
 } 
