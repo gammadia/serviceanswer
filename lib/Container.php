@@ -2,7 +2,7 @@
 
 namespace Voilab\Serviceanswer;
 
-class Container extends \Pimple {
+class Container extends \Pimple\Container {
 
     /**
      * @param array $config Global configuration
