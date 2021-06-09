@@ -21,7 +21,7 @@ interface Returnable {
     /**
      * Get all messages
      *
-     * @return array
+     * @return array<string, string>
      */
     public function getMessages();
 
@@ -29,7 +29,7 @@ interface Returnable {
      * Get a specific message
      *
      * @param string $type
-     * @return string
+     * @return string|null
      */
     public function getMessage($type = null);
 
@@ -43,7 +43,7 @@ interface Returnable {
     /**
      * Récupération des métadonnées de la réponse
      *
-     * @return array
+     * @return mixed[]
      */
     public function getMetadatas();
 } 

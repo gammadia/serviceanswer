@@ -5,7 +5,7 @@ namespace Voilab\Serviceanswer;
 class Container extends \Pimple\Container {
 
     /**
-     * @param array $config Global configuration
+     * @param mixed[] $config Global configuration
      */
     public function __construct(array $config)
     {

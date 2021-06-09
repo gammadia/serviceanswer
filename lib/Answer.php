@@ -8,6 +8,9 @@ use Voilab\Serviceanswer\Traits\Base;
 class Answer implements Returnable {
     use Base;
 
+    /**
+     * @var Container
+     */
     public $container;
 
 
